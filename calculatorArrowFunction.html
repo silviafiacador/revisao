@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with arrow function</title>
+</head>
+<body>
+
+    <form action="#">
+        <label for="">n1</label>
+        <input type="number" id="n1">
+        <label for="#">n2</label>
+        <input type="number" id="n2">
+        <button id="soma">Soma</button>
+        <button id="multiplica">Multiplica</button>
+        <button id="subtrai" >subtrai</button>
+        <button id="div" >Divide</button>
+
+    </form>
+
+
+    <script>        
+
+    
+    document.getElementById("soma").addEventListener('click', soma);
+    document.getElementById("multiplica").addEventListener('click', multiplica);    
+    document.getElementById("subtrai").addEventListener('click', subtrai);
+    document.getElementById("div").addEventListener('click', divide)
+    
+    
+            function soma()
+            {
+             var n1 = parseInt(document.getElementById("n1").value);
+             var n2 = parseInt(document.getElementById("n2").value);
+            var resposta=n1+n2;
+            alert(resposta);
+            }
+
+            function multiplica ()
+            {                   
+                alert(resposta = n1*n2);
+            }
+
+            function subtrai()
+            {            
+                alert(resposta = n1-n2);
+            }
+
+            function divide ()
+            {
+                if(n1 == 0 || n2 == 0)
+                {            
+                    alert("Não podemos dividir por 0!");
+                }
+                else
+                {
+                    alert(resposta = n1/n2);
+                }
+            }
+
+            // var n1 = parseInt(prompt("Digita ai")), n2 = parseInt(prompt("Digita ai"))
+
+            // var resultado = soma => (n1+n2)
+
+            // console.log(resultado(n1,n2))          
+
+            
+    </script>
+
+
+</body>
+</html>
