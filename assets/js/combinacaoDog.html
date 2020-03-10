@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var palavra = "dog";
+        var vetor =palavra.split("")
+           
+        for (var i=0;i<vetor.length; i++) { 
+            for (var j=0; j<vetor.length;j++){
+                for (var k=0; k<vetor.length;k++){
+                   if(i != j && i != k && j != k){
+                        console.log(vetor[i]+vetor[j]+vetor[k]);   }
+                }         
+            }
+        }
+    </script>    
+</body>
+</html>

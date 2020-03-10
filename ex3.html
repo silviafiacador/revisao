@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- uma das exigências para ser responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+        h1 {color: rgb(140,79,243);text-align: center;}
+        h3 {color: rgb(140,79,243);}
+        #principal {width: 60%;margin:0 auto;}
+        #js {width: 50%;float:left;padding:10px;}
+        #tartaruga {width: 50%;float:left;text-align: center; }
+        #ui {width: 33.3%; float:left;padding:10px;}
+        #sass {width: 33.3%; float:left;padding:10px;}
+        #wd {width: 33.3%; float:left;padding:10px;}
+
+
+        @media (max-width: 600px) {
+            
+            body {background-color: rgb(71, 71, 99)}
+            h1,h3 {color:white;}
+            #principal{width: 100%;}
+            #tartaruga { display: none;}
+            #js {width: 94%;background-color:rgb(140,79,243);margin-left:3%;}
+            #ui {width: 94%;margin-left:3%;}
+            #sass {width: 94%;background-color:rgb(140,79,243);margin-left:3%;}
+            #wd {width: 94%;margin-left:3%;}
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+        <h1>Cursos de Web Design</h1>
+        <div id="js">
+            <h3> JavaScript e jQuery</h3>
+            <p>
+               
+                No curso de JavaScript e jQuery você irá aprender como manipular os elementos do DOM a partir de interações do usuário. Primeiro eu começo com os fundamentos do JS, ensinando a sintaxe, variáveis, funções, objetos e outros elementos básicos.
+            </p>
+        </div>
+        <div id="tartaruga">
+            <img src="assets/img/img1.png" alt="Imagem de uma tartaruga">
+        </div>
+        <div id="ui">
+            <h3>UI Design</h3>
+            <p>
+                UI Design, ou User Interface Design (Design de Interface do Usuário), é o meio pela qual uma pessoa interage e controla um dispositivo, software ou aplicativo. Esse controle pode ser feito por meio de botões, menus e qualquer elemento que forneça uma interação entre o dispositivo e o usuário.
+            </p>
+        </div>
+        <div id="sass">
+            <h3>SASS</h3>
+            <p>
+                O Sass é uma linguagem baseada em CSS (opa, aí já facilita, não é mesmo?) que depois de compilada gera o bom e velho CSS. Possui duas sintaxes diferentes, o SASS e o SCSS. Essa última é a que acho mais bacana pela semelhança com CSS normal, a outra é atrelada a indentação.
+            </p>
+
+        </div>
+        <div id="wd">
+            <h3>Web Design</h3>
+            <p>
+                O Web Design é uma extensão da prática do design gráfico, onde o foco do projeto é a criação de web sites e documentos disponíveis no ambiente da World Wide Web.
+            </p>
+        </div>
+        
+        
+    </div>        
+</body>
+</html>
